@@ -1,0 +1,293 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --first-color: hsl(12, 32%, 22%);
+  --first-color-alt: hsl(12, 42%, 12%);
+  --second-color: hsl(39, 62%, 65%);
+  --title-color: hsl(12, 12%, 16%);
+  --second-font: "Pacifico", cursive;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+/*================== COMMUN PROPRITIES ================== */
+.btn{
+    padding: 1REM 1.5rem;
+}
+.btn:hover{
+    box-shadow: 0px 8px 48px hsla(39, 62%, 65%, .3);
+}
+section{
+    border-radius: 56PX 56px 0 0;
+    margin-top: -45px;
+    position: relative;
+}
+h1{
+    font-family: var(--second-font);
+}
+#btnScroll{
+    margin-bottom: 15px;
+    bottom: -100%;
+    right: 15px;
+    padding: .5REM 1REM;
+    background-color: var(--first-color-alt);
+    box-shadow: 0 1px 16px var(--first-color);
+    transition: .3s;
+}
+/* <!-- ===================== NavBar ===================== --> */
+.navbar{
+    background-color: var(--first-color-alt);
+    font-family: var(--second-font);
+}
+.dashed-border{
+    border-bottom: dashed 2px #fff;
+}
+.navbar img{
+    height: 40PX;
+    width: 40PX;
+}
+.navbar .nav-link{
+    color: #fff;
+    font-size: 1.5rem;    
+}
+.navbar .nav-link:hover{ 
+    color: var(--second-color);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: var(--second-color);
+}
+/* <!-- =================== Home =================== --> */
+.home{
+    background-color: var(--first-color-alt);
+}
+.home h6{
+    font-size: .9rem;
+    color: var(--second-color);
+}
+.home h1{
+    font-size: 4rem;
+}
+.home .btn:hover,
+.home .btn{
+    background-color: var(--second-color);
+    color: var(--title-color);
+}
+.home h1 img{
+    height: 100PX;
+    width: 100PX;
+}
+/* <!-- =================== Product =================== --> */
+.product{
+    background-color: var(--first-color);
+}
+.product .btn:hover,
+.product .btn{
+    background-color: var(--first-color-alt);
+}
+.product img{
+    height: 180px;
+}
+.product h5{
+    font-family: var(--second-font);
+}
+/* <!-- =================== STEPS =================== --> */
+.steps{
+    background-color: var(--first-color);
+}
+.steps .box{
+    height: 210PX;
+    width: 210PX;
+}
+.steps .bg{
+    background-color: hsl(12, 24%, 32%);
+}
+.steps article img {
+    transform: translateY(50%);
+    transition: 0.3s;
+}
+.steps article img:hover {
+    transform: translateY(calc(50% - 5px));
+}
+.steps article h5{
+    background-color: var(--second-color);
+    color: var(--title-color);
+    outline: 10px solid var(--first-color);
+}
+.steps .svg{
+    height: 400PX;
+    width: 300PX;
+}
+.steps .svg:nth-child(1){
+    top: 4rem;
+    left: 13rem;
+    transform: rotate(120DEG);
+}
+.steps .svg:nth-child(2){
+    bottom: 3rem;
+    right: 13rem;
+    transform: rotate(60DEG);
+}
+/* <!-- =================== FOOTER =================== --> */
+footer{
+    border-radius: 56PX 56px 0 0;
+    margin-top: -45px;
+    background-color: var(--first-color-alt);
+    position: relative;
+}
+footer a{
+    font-family: var(--second-font);
+    text-decoration: none;
+}
+footer a img{
+    height: 50PX;
+    width: 50PX;
+}
+footer input{
+    outline: none;
+    border:  solid 1px hsl(12, 8%, 48%);
+}
+footer input::placeholder{
+    color: hsl(12, 8%, 48%);
+}
+footer .btn:hover,
+footer .btn{
+    background-color: var(--second-color);
+    color: var(--title-color);
+}
+footer p{
+    font-size: .85rem;
+}
+footer p a{
+    color: var(--second-color);
+}
+/* ==================== Breakpoints ======================= */
+/* --- Xsmall device --- */
+@media screen and (width <= 576px) {
+    .navbar-nav{
+        width: 93%;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        background-color: var(--first-color-alt);
+        border-radius: 56PX 56px 0 0;
+    }
+    .navbar .nav-link{
+        font-size: .7rem;    
+    }
+    .home h1{
+        font-size: 3rem;
+    }
+    .home h1 img{
+        height: 70PX;
+        width: 70PX;
+    }
+    .steps .box{
+        height: 200PX;
+        width: 250PX;
+    }
+    .steps .svg{
+        height: 280px;
+        width: 230PX;
+    }
+    .steps .svg:nth-child(1){
+        left: 25%;
+        transform: rotate(-60DEG);
+    }
+    .steps .svg:nth-child(2){
+        right: 20%;
+        transform: rotate(60DEG);
+    }
+    .steps p{
+        font-size: .8REM;
+        width: 75%;
+    }
+    #btnScroll{
+        margin-bottom: 75px;
+        right: 10px;
+        padding: .4REM .8rem;
+    }
+}
+/* --- small device --- */
+@media screen and (577px <=width <= 768px) {
+    .navbar-nav{
+        width: 85%;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        background-color: var(--first-color-alt);
+        border-radius: 56PX 56px 0 0;
+    }
+    .navbar .nav-link{
+        font-size: .8rem;    
+    }
+    .steps .box{
+        height: 220PX;
+        width: 320PX;
+    }
+    .steps .svg:nth-child(1){
+        left: 8rem;
+        transform: rotate(-50DEG);
+    }
+    .steps .svg:nth-child(2){
+        right: 8rem;
+        transform: rotate(50DEG);
+    }
+    .steps p{
+        width: 75%;
+    }
+    #btnScroll{
+        margin-bottom: 70px;
+    }
+}
+/* --- meduim device --- */
+@media screen and (769px <=width <= 991px) {
+    .navbar-nav{
+        width: 80%;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        background-color: var(--first-color-alt);
+        border-radius: 56PX 56px 0 0;
+    }
+    .navbar .nav-link{
+        font-size: .9rem;    
+    }
+    .steps .box{
+        height: 180PX;
+        width: 180PX;
+    }
+    .steps .svg{
+        height: 250PX;
+        width: 150PX;
+    }
+    .steps .svg:nth-child(1){
+        top: 4rem;
+        left: 8rem;
+        transform: rotate(140DEG);
+    }
+    .steps .svg:nth-child(2){
+        top: 4rem;
+        right: 8rem;
+        transform: rotate(35DEG);
+    }
+    .steps p{
+        font-size: .8rem;
+        text-align: center;
+    }
+    #btnScroll{
+        margin-bottom: 70px;
+    }
+}

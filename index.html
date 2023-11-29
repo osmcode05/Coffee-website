@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive coffee website - OSM</title>
+    <!-- ============== ICON =============== -->
+    <link rel="icon" href="img/favicon.png">
+    <!-- ============== bootstrap css file =============== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ============== css file =============== -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ============== Remixicon CDN LINK =============== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- =================== NavBar =================== -->
+    <nav class="navbar navbar-expand sticky-top dashed-border">
+      <div class="container">
+        <a class="navbar-brand m-lg-0 m-auto text-light fs-3" href="#"><img src="img/logo.png" alt="image"> Coffetto</a>
+          <ul class="navbar-nav nav-pills gap-sm-5 gap-3">
+            <li class="nav-item">
+              <a class="nav-link d-flex flex-column align-items-center" href="#home">
+                <i class="ri-home-4-fill d-lg-none fs-2"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex flex-column align-items-center" href="#about">
+                <i class="ri-award-fill d-lg-none fs-2"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex flex-column align-items-center" href="#steps">
+                <i class="ri-compass-3-fill d-lg-none fs-2"></i>
+                <span>Steps</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex flex-column align-items-center" href="#testimonial">
+                <i class="ri-message-3-fill d-lg-none fs-2"></i>
+                <span>Testimonial</span>
+              </a>
+            </li>
+          </ul>
+          
+      </div>
+    </nav>
+    <!-- =================== MAIN =================== -->
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <!-- =================== HOME =================== -->
+      <div class="home" id="home">
+        <div class="container pt-5 pb-5">
+          <div class="row row-gap-3">
+            <div class="col-lg-6 col-12 d-flex order-lg-1 order-2">
+              <img src="img/home-coffee.png" alt="image" class="w-75 m-auto">
+            </div> 
+            <div class="text_home col-lg-6 col-12 order-lg-2 order-1 p-lg-5 text-light text-lg-start text-center">
+              <h6 class="mt-4">EXCEPTIONAL QUALITY</h6>
+              <h1 class="mt-4 mb-4 fw-bold">
+                It's time for a <br> good coffee
+                <img src="img/home-coffee-title.png" alt="image">
+              </h1>
+              <p> Each select coffee bean reflects our commitment to Peruvian coffee growers, who bring the best select coffee to your table.</p>
+              <a class="btn fw-bold rounded-pill mt-3" href="#">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =================== PRODUCT =================== -->
+      <section class="product">
+        <div class="container pt-5 pb-5">
+         <div class="row row-gap-4 text-light pt-lg-5 pb-5">
+          <div class="product_text col-lg-6 col-12 text-lg-start text-center">
+            <a class="btn rounded-pill fw-bold mt-lg-5 text-light mb-4" href="#">Scroll Down</a>
+            <p>We strive to form deep partnerships with farmers from all over the world to perspective together and form healthy working relationships built on trust and respect.</p>
+          </div>
+          <div class="box col-lg-2 col-6 bg-transparent text-center">
+            <img src="img/product-coffee-1.png" class="img-fluid" alt="image">
+            <h5 class="mt-2 mb-3">Classic Coffee</h5>
+            <p>$17.90 </p>
+          </div>
+          <div class="box col-lg-2 col-6 bg-transparent text-center">
+            <img src="img/product-coffee-2.png" class="img-fluid" alt="image">
+            <h5 class="mt-2 mb-3">Black coffee</h5>
+            <p>$24.90 </p>
+          </div>           
+           <div class="box col-lg-2 col-6 bg-transparent text-center m-auto">
+            <img src="img/product-coffee-3.png" class="img-fluid" alt="image">
+            <h5 class="mt-2 mb-3">Strong coffee</h5>
+            <p>$32.90 </p>
+          </div>
+         </div>
+        </div>
+      </section>
+      <!-- =================== ABOUT =================== -->
+      <section class="about bg-white" id="about">
+        <div class="container pt-5 pb-5">
+          <div class="row row-gap-3">
+            <div class="col-lg-6 col-12 order-lg-1 order-2 p-5">
+              <img src="img/about-coffee.png" alt="image" class="img-fluid rounded">
+            </div>
+            <div class="about_text col-lg-6 col-12 pt-lg-5 order-lg-2 order-1 text-lg-start text-center">
+              <h1 class="mb-4 pt-lg-5">Our History</h1>
+              <p>We make and grow the best coffee in Peru, accompanying families since 1930, with professional workers who 
+              harvest, collect and select the coffee with quality work, thus providing exquisite coffee to enjoy together as a family.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =================== STEPS =================== -->
+      <section class="steps" id="steps">
+        <img src="img/coffee-beans-bg.png" alt="image" class="position-absolute w-100 h-100 opacity-25">
+        <div class="container overflow-hidden pt-5 pb-5 text-light">
+          <h1 class="text-center">Steps of manufacturing our products</h1>
+          <div class="row position-relative pb-5 pt-5">
+            <img src="img/steps-curve-line.svg" class="svg position-absolute" alt="image">
+            <img src="img/steps-curve-line.svg" class="svg position-absolute" alt="image">
+            <article class="col-md-4 col-12 d-flex flex-md-column justify-content-center align-items-center gap-5">
+              <div class="box position-relative">
+                <div class="bg position-absolute rounded-circle start-0 top-0 h-100 w-100"></div>
+                <img src="img/steps-green-coffee.png" alt="image" class="img-fluid position-absolute bottom-50 p-4">
+                <h5 class=" position-absolute rounded-circle top-0 fw-bolder p-2 m-2">01</h5>
+              </div>
+              <p>Harvest occurs annually when the coffee beans reach maturity and are collected for processing.</p>
+            </article>
+            <article class="col-md-4 col-12 d-flex flex-md-column align-items-center justify-content-center gap-4 pt-lg-5">
+              <p class="mt-md-5">The beans are dried using a wet or dry technique,depending on the taste we want to obtain.</p>
+              <div class="box position-relative">
+                <div class="bg position-absolute rounded-circle start-0 top-0 h-100 w-100"></div>
+                <img src="img/steps-coffee-beans.png" alt="image" class="img-fluid position-absolute bottom-50 p-4">
+                <h5 class=" position-absolute rounded-circle top-0 fw-bolder p-2 m-2">02</h5>
+              </div>
+            </article>
+            <article class="col-md-4 col-12 d-flex flex-md-column align-items-center justify-content-center gap-5">
+              <div class="box position-relative">
+                <div class="bg position-absolute rounded-circle start-0 top-0 h-100 w-100"></div>
+                <img src="img/steps-ground-coffee.png" alt="image" class="img-fluid position-absolute bottom-50 p-4">
+                <h5 class=" position-absolute rounded-circle top-0 fw-bolder p-2 m-2">03</h5>
+              </div>
+              <p>The coffee is roasted and acquires its flavor by processing the grain in ovens.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- =================== TESTIMONIAL =================== -->
+      <section class="testimonial bg-white" id="testimonial">
+       <div class="container pt-5 pb-5">
+        <div class="row row-gap-3">
+          <div class="testimonial_text col-lg-6 col-12 p-lg-5 p-3">
+            <h1 class="mb-5 mt-lg-5">Coffee is the best drink in the morning, it keeps you focused.</h1>
+            <p>Jhon Doe</p>
+          </div>
+          <div class="col-lg-6 col-12 p-5">
+            <img src="img/testimonial-coffee.png" alt="image" class="img-fluid rounded">
+          </div>
+        </div>
+       </div>
+      </section>
+  </main>
+  <!-- =================== FOOTER =================== -->
+  <footer>
+    <img src="img/coffee-beans-bg.png" alt="image" class="position-absolute w-100 h-100 opacity-25 z-0">
+    <div class="container pt-5 pb-5 position-relative z-1 text-light">
+      <div class="row">
+        <div class="col-lg-7 col-12">
+          <a class="text-light fs-3" href="#home">
+            <img src="img/logo.png" alt="image">
+            Coffetto
+          </a>
+          <h1 class="mt-4">Sign up for our newsletter</h1>
+        </div>
+        <div class="col-lg-5 col-12 pt-4 text-center">
+          <input class="rounded-pill bg-transparent text-light w-100 p-3" type="email" placeholder="Enter e-mail address">
+          <a class="btn rounded-pill fw-bold w-100 mt-4 mb-3" href="#">Subscribe</a>
+          <p>We care about your data. Read our <a href="#">Privacy Policy</a></p>
+        </div>
+      </div>
+      <div class="col-12 text-center mt-4">
+        <div class="d-flex justify-content-center mb-5 gap-5">
+          <a href="https://github.com/osmcode05">
+            <i class="ri-github-fill fs-3 text-light"></i>
+          </a>
+          <a href="https://twitter.com/OTessla">
+            <i class="ri-twitter-x-line fs-3 text-light"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ait-moummad-oussama-b05b89284">
+            <i class="ri-linkedin-box-fill fs-3 text-light"></i>
+          </a>
+        </div>
+        <p class="mb-lg-0 mb-5">&#169; Copyright By OUSSAMA AIT MOUMMAD</p>
+      </div>
+    </div>
+  </footer>
+  <!-- =================== Scroll Up =================== -->
+  <button id="btnScroll" class="position-fixed rounded-circle border-0">
+    <i class="ri-arrow-up-line text-light"></i>
+  </button>
+      <!-- =================== Scrollreveal js file =================== -->
+      <script src="js/scrollreveal.min.js"></script>
+      <!-- =================== bootstrap js file =================== -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- =================== js code =================== -->
+      <script src="js/main.js"></script>
+</body>
+</html>
